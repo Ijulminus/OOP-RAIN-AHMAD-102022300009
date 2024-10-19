@@ -13,8 +13,8 @@ public class MakananKering {
         this.jumlah = jumlah;
         this.harga = harga;
         this.brand = brand;
-    }    
-    
+    }
+
     // Todo : Create Getter and Setter
     public String getNama(){
         return nama;
@@ -28,16 +28,16 @@ public class MakananKering {
         return harga;
     }
 
-    public String getBrand(){
+    public String getbrand(){
         return brand;
     }
 
     // Todo : Create Method ShowData
-    public void tampilkanData(){
-        System.out.println("===Makanan Kering===");
-        System.out.println("Nama Makanan : " + nama);
+    public void tampilMakanan(){
+        System.out.println("Nama Barang : " + nama);
         System.out.println("Jumlah : " + jumlah);
-        System.out.println("Harga : " + harga);
-        System.out.println("Nama Brand : " + brand);
+        System.out.println("Harga : Rp." + harga);
+        System.out.println("brand : " + brand);
     }
+
 }

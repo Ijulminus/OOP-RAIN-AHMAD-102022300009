@@ -7,8 +7,8 @@ public class ManajemenInventaris {
     Scanner input = new Scanner(System.in);
 
     // Todo : Create ArrayList of MakananKering (daftarMakananKering) and MakananBasah (daftarMakananBasah) to store items
-    ArrayList<MakananKering> daftarMakananKering = new ArrayList<>();
-    ArrayList<MakananBasah> daftarMakananBasah = new ArrayList<>();
+    ArrayList<String> daftarMakananKering = new ArrayList<>();
+    ArrayList<String> daftarMakananBasah = new ArrayList<>();
 
     public void tambahMakananKering() {
         // Todo : Create input for Nama Makanan, Jumlah Makanan, Harga Makanan, and Brand Makanan
@@ -22,7 +22,6 @@ public class ManajemenInventaris {
         String brandKering = input.nextLine();
         // Todo : Create a new object for MakananKering
         MakananKering MakananKering = new MakananKering(namaKering, jumlahKering, hargaKering, brandKering);
-        daftarMakananKering.add(MakananKering);
 
         // Todo : Create Print Notifitaction "Makanan kering berhasil ditambahkan"
         System.out.print("Makanan Kering " + namaKering +" Berhasil Ditambahkan!");
@@ -40,7 +39,6 @@ public class ManajemenInventaris {
         String bahanBasah = input.nextLine();
         // Todo : Create a new object for MakananBasah
         MakananBasah MakananBasah = new MakananBasah(namaBasah, jumlahBasah, hargaBasah, bahanBasah);
-        daftarMakananBasah.add(MakananBasah);
 
         // Todo :Create Print Notifitaction "Makanan Basah berhasil ditambahkan"
         System.out.print("Makanan Makanan " + namaBasah +" Berhasil Ditambahkan!");
@@ -53,12 +51,12 @@ public class ManajemenInventaris {
             System.out.print("Tidak ada makanan disini");
         } else {
             // Todo : Create print notification for Makanan Kering  
-            for (MakananKering makanan : daftarMakananKering){
-                System.out.print(makanan);
+            for (String nama : daftarMakananKering){
+                System.out.print(nama);
             }
             // Todo : Create print notification for  Makanan Basah
-            for (MakananBasah makanan : daftarMakananBasah){
-                System.out.print(makanan);
+            for (String nama : daftarMakananBasah){
+                System.out.print(nama);
             }
             }
         }

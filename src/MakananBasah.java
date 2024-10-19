@@ -1,6 +1,6 @@
 // Don't delete any comments below!!!
 public class MakananBasah {
-    // Todo : Create private attribute of MakananKering (nama, jumlah, harga, and bahan)
+    // Todo : Create private attribute of MakananBasah (nama, jumlah, harga, and bahan)
     private String nama;
     private int jumlah;
     private double harga;
@@ -12,8 +12,7 @@ public class MakananBasah {
         this.jumlah = jumlah;
         this.harga = harga;
         this.bahan = bahan;
-    }    
-
+    }
     // Todo : Create Getter and Setter
     public String getNama(){
         return nama;
@@ -27,16 +26,16 @@ public class MakananBasah {
         return harga;
     }
 
-    public String getBahan(){
+    public String getbahan(){
         return bahan;
     }
 
     // Todo : Create Method ShowData
-    public void tampilkanData(){
-        System.out.println("===Makanan Kering===");
-        System.out.println("Nama Makanan : " + nama);
+    public void tampilMakanan(){
+        System.out.println("Nama Barang : " + nama);
         System.out.println("Jumlah : " + jumlah);
-        System.out.println("Harga : " + harga);
-        System.out.println("Bahan : " + bahan);
+        System.out.println("Harga : Rp." + harga);
+        System.out.println("bahan : " + bahan);
     }
+
 }
