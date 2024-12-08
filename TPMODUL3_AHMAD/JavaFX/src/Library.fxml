@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.?>
+<?import javafx.scene.layout.?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="400.0" prefWidth="600.0">
+    <!-- Tabel untuk menampilkan data album -->
+    <TableView fx:id="albumTable" layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="300.0">
+        <columns>
+            <TableColumn fx:id="columnAlbumName" text="Album Name" prefWidth="100.0" />
+            <TableColumn fx:id="columnArtist" text="Artist" prefWidth="100.0" />
+            <TableColumn fx:id="columnAvailable" text="Available" prefWidth="50.0" />
+            <TableColumn fx:id="columnTotal" text="Total" prefWidth="50.0" />
+        </columns>
+    </TableView>
+
+    <!-- Form untuk input/edit data album -->
+    <VBox layoutX="340.0" layoutY="20.0" spacing="10.0" alignment="TOP_LEFT">
+        <Label text="Judul Album" />
+        <TextField fx:id="albumTitleField" />
+        <Label text="Nama Artis" />
+        <TextField fx:id="artistNameField" />
+        <Label text="Jumlah Total" />
+        <TextField fx:id="totalAmountField" />
+        <Label text="Jumlah Rented" />
+        <TextField fx:id="rentedAmountField" />
+    </VBox>
+
+    <!-- Tombol aksi -->
+    <HBox layoutX="20.0" layoutY="240.0" spacing="10.0">
+        <Button text="Rent Selected" fx:id="rentButton" />
+        <Button text="Tambah" fx:id="addButton" />
+        <Button text="Hapus" fx:id="deleteButton" />
+        <Button text="Update" fx:id="updateButton" />
+    </HBox>
+
+    <!-- Label judul aplikasi -->
+    <Label text="Zepp's Listening Bar" layoutX="20.0" layoutY="300.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+</AnchorPane>
